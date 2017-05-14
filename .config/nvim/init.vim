@@ -30,6 +30,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 
+Plug 'chriskempson/base16-vim'
+
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
 " Plug 'bfredl/nvim-ipy'
