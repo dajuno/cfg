@@ -1,0 +1,44 @@
+# source /usr/share/zsh/scripts/antigen/antigen.zsh
+
+# antigen bundle sorin-ionescu/prezto
+
+export PATH=$PATH:${HOME}/.local/bin
+export PATH=$PATH:${HOME}/texlive/2015/bin/x86_64-linux
+export PATH=$PATH:${HOME}/dev/hashdist/bin
+export PATH=$PATH:/opt/visit/bin/
+export PATH=$PATH:${HOME}/.gem/ruby/2.2.0/bin
+export PATH=$PATH:${HOME}/.gem/ruby/2.3.0/bin
+export MANPATH=$MANPATH:${HOME}/texlive/2015/texmf-dist/doc/man
+export INFOPATH=$INFOPATH:${HOME}/texlive/2015/texmf-dist/doc/info
+
+export PYEDITOR=gvim
+export EDITOR=vim
+
+# ipython colored help output
+export LESS='-r'
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias pdflatexmk='latexmk -pdf -pvc'
+alias xelatexmk='latexmk -pdf -pvc -r .latexmkrc_xetex'
+
+alias tmux='TERM=screen-256color-bce tmux'
+
+alias vim='nvim'
+
+
+# source $HOME/.tmuxinator.zsh
+
+stty -ixon
+# No ttyctl, so we need to save and then restore terminal settings
+# vim()
+# {
+#     local STTYOPTS="$(stty --save)"
+#     stty stop '' -ixoff
+#     command vim "$@"
+#     stty "$STTYOPTS"
+# }
+#
+
+
+# added by Pew
+# source $(pew shell_config)
